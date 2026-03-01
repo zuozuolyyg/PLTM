@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学 - 音乐艺术 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="../../index.html" class="navbar-brand">
+                <span class="gradient-text">理论力学</span>
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../../interest/music.html" style="color: #00d4ff;">音乐艺术</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="page-content">
+        <div class="container">
+            <!-- 面包屑 -->
+            <div style="padding: 1rem 0; color: rgba(255,255,255,0.5);">
+                <a href="../../index.html" style="color: #00d4ff; text-decoration: none;">首页</a>
+                <span style="margin: 0 0.5rem;">/</span>
+                <a href="../../interest/music.html" style="color: #00d4ff; text-decoration: none;">音乐艺术</a>
+                <span style="margin: 0 0.5rem;">/</span>
+                <span>运动学</span>
+            </div>
+
+            <!-- 返回按钮 -->
+            <a href="../../interest/music.html" class="btn-secondary" style="margin-bottom: 2rem; display: inline-flex;">
+                <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+                返回课程列表
+            </a>
+
+            <!-- 课程标题 -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span style="display: inline-block; background: rgba(0,212,255,0.2); color: #00d4ff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; margin-bottom: 1rem;">第3课</span>
+                <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">运动学</h1>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem;">琴弦振动、声波传播的运动学描述</p>
+            </div>
+
+            <!-- 课程介绍 -->
+            <div class="section">
+                <div class="section-content">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.9);">
+                        音乐中的运动包括琴弦的振动、空气分子的往复运动、声波的传播等。运动学帮助我们定量描述这些运动，而不考虑产生运动的力。
+                    </p>
+                </div>
+            </div>
+
+            
+            <!-- 章节1 -->
+            <div class="section">
+                <h2 class="section-title">琴弦振动的运动描述</h2>
+                <div class="section-content">
+                    <p style="line-height: 1.8; color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+                        琴弦振动可以看作是一维波动，弦上各点做简谐运动。通过运动学分析，可以理解音高、泛音的产生机制。
+                    </p>
+                    <img src="../../images/music-statics-ch1-balance-analysis.jpg" alt="琴弦振动的运动描述" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>小提琴弦的振动分析</h4>
+                        <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.8);">小提琴弦振动的运动学参数：</p>
+                        <ul>
+                            <li>振动频率：A弦440Hz，每秒振动440个来回</li>
+                            <li>振幅范围：正常演奏时振幅0.5-2mm，强奏可达5mm</li>
+                            <li>波速计算：弦上横波速度约100-200m/s，取决于张力</li>
+                            <li>驻波形成：弦长决定可产生的驻波波长，形成离散音高</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 章节2 -->
+            <div class="section">
+                <h2 class="section-title">声波传播的运动学</h2>
+                <div class="section-content">
+                    <p style="line-height: 1.8; color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+                        声波是空气分子的疏密波动，以约340m/s的速度传播。理解声波的运动特性对音响设计至关重要。
+                    </p>
+                    
+                    
+                    <div class="case-study">
+                        <h4>音乐厅的声学设计</h4>
+                        <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.8);">音乐厅设计中的运动学考虑：</p>
+                        <ul>
+                            <li>直达声与反射声：声音传播时间差决定空间感</li>
+                            <li>混响时间：声音衰减60dB所需时间，音乐厅约1.5-2秒</li>
+                            <li>声程计算：反射面距离影响回声时间，需精确计算</li>
+                            <li>座位布局：确保各座位声程差小于50ms，避免回声</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- 课程导航 -->
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0,212,255,0.2);">
+                <a href="./statics.html" class="btn-secondary">
+                    <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+                    上一课：静力学基础
+                </a>
+                <a href="./dynamics.html" class="btn-primary">
+                    下一课：动力学
+                    <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>理论力学 · 个性化学习平台</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">用兴趣点燃学习热情</p>
+    </footer>
+
+    <script src="../../js/common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

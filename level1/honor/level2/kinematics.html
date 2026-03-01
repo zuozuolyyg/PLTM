@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学 - 王者荣耀 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../honor.html" style="color:#00d4ff;">王者荣耀</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../honor.html" style="color:#00d4ff;text-decoration:none;">王者荣耀</a>
+            <span style="margin:0 0.5rem;">/</span><span>运动学</span>
+        </div>
+        <a href="../../honor.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第三课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">运动学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">技能弹道与英雄位移的运动学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约50分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">鲁班的子弹、后羿的箭、诸葛亮的法球——每个技能都有独特的运动轨迹。理解这些弹道的运动学，能帮你更好地命中敌人或躲避技能。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">技能弹道的轨迹分析</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">王者荣耀中的技能弹道主要有直线型、抛物线型、追踪型和范围型。不同类型的弹道有不同的运动学特征和躲避策略。</p>
+                    
+                    <div class="case-study">
+                        <h4>各类技能的弹道特征</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">不同弹道类型的运动学分析：</p>
+                        <ul><li>直线弹道（后羿大招）：匀速直线运动，速度恒定，可通过横向移动躲避</li>
+<li>抛物线弹道（鲁班大招）：有一定弧度，到达时间与距离相关</li>
+<li>追踪弹道（司马懿大招）：自动追踪目标，速度略低于英雄移动速度</li>
+<li>范围技能（安琪拉大招）：扇形区域，需要判断边界位置</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">位移技能的运动分析</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">闪现、冲锋、跳跃等位移技能改变英雄的位置。位移距离、速度和无敌帧是关键参数，决定了技能的实战价值。</p>
+                    
+                    <div class="case-study">
+                        <h4>位移技能的运动学参数</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">常见位移技能的分析：</p>
+                        <ul><li>闪现：瞬间位移，距离固定，无运动过程，是最强的位移技能</li>
+<li>李白一技能：快速冲刺，有短暂无敌帧，可穿越薄墙</li>
+<li>韩信大招：跳跃位移，有上升和下落过程，落地有控制效果</li>
+<li>关羽冲锋：加速运动，速度逐渐提升，达到一定速度后触发强化效果</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./statics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./dynamics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

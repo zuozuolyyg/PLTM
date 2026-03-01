@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学 - 极客制造 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../geek.html" style="color:#00d4ff;">极客制造</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../geek.html" style="color:#00d4ff;text-decoration:none;">极客制造</a>
+            <span style="margin:0 0.5rem;">/</span><span>运动学</span>
+        </div>
+        <a href="../../geek.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第三课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">运动学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">机械臂与机器人的运动学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约50分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">机械臂的每一个关节都是一个运动学问题。给定末端位置，计算各关节角度（逆运动学）是机器人控制的核心挑战。</p>
+                    <img src="../../../images/geek-statics-ch2-quadruped-gait.jpg" alt="Geek Statics Ch2 Quadruped Gait" class="content-image">
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">机械臂的运动学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">机械臂由多个连杆和关节组成。正运动学根据关节角度计算末端位置，逆运动学根据目标位置计算关节角度。</p>
+                    <img src="../../../images/geek-statics-ch2-robot-arm-analysis.jpg" alt="Geek Statics Ch2 Robot Arm Analysis" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>DIY机械臂的运动学</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">机械臂运动学的关键概念：</p>
+                        <ul><li>自由度：6自由度机械臂可以到达工作空间内的任意位置和姿态</li>
+<li>DH参数：描述相邻关节间几何关系的4个参数</li>
+<li>正运动学：已知6个关节角度→计算末端位置，有唯一解</li>
+<li>逆运动学：已知目标位置→计算关节角度，可能有多个解</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">无人机的飞行运动学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">四旋翼无人机通过4个电机的差速旋转实现六自由度运动。俯仰、横滚、偏航和升降都由电机转速组合控制。</p>
+                    <img src="../../../images/geek-statics-ch2-robot-structure.jpg" alt="Geek Statics Ch2 Robot Structure" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>四旋翼的运动控制</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">无人机飞行的运动学原理：</p>
+                        <ul><li>悬停：4个电机转速相同，总升力等于重力</li>
+<li>前进：前两个电机减速、后两个加速，产生前倾力矩</li>
+<li>侧移：左右电机差速旋转，产生侧倾力矩</li>
+<li>旋转：对角电机同向加速，利用反扭矩实现偏航</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./statics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./dynamics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

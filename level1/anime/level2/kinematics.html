@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学 - 二次元世界 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../anime.html" style="color:#00d4ff;">二次元世界</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../anime.html" style="color:#00d4ff;text-decoration:none;">二次元世界</a>
+            <span style="margin:0 0.5rem;">/</span><span>运动学</span>
+        </div>
+        <a href="../../anime.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第三课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">运动学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">柯南足球弹道与忍者手里剑的飞行轨迹</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约50分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">柯南踢出的足球总能精准命中目标，火影忍者的手里剑在空中旋转飞行。这些投射物的运动都可以用运动学来分析。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">足球的弹道分析</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">足球在空中的运动受重力和空气阻力影响。旋转的足球还会产生马格努斯效应，使球偏转——这就是香蕉球的原理。</p>
+                    <img src="../../../images/football-curve.jpg" alt="Football Curve" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>柯南足球的运动学</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">足球弹道的物理分析：</p>
+                        <ul><li>抛物线轨迹：无旋转时足球做标准抛体运动，最远射程角度约45°</li>
+<li>香蕉球：侧旋产生马格努斯力，球在空中弯曲飞行</li>
+<li>下坠球：上旋使球快速下坠，守门员难以判断落点</li>
+<li>柯南的精准度：要在移动中精确命中目标，需要实时计算弹道补偿</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">手里剑与飞刀的飞行力学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">旋转的手里剑在飞行中保持姿态稳定，这是陀螺效应的应用。旋转产生的角动量使手里剑抵抗外力矩的干扰。</p>
+                    
+                    <div class="case-study">
+                        <h4>忍具的飞行力学</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">火影忍者中的投掷物理：</p>
+                        <ul><li>陀螺效应：手里剑高速旋转产生角动量，保持飞行姿态稳定</li>
+<li>空气阻力：手里剑的十字形截面空气阻力大，有效射程有限</li>
+<li>苦无投掷：不旋转的苦无需要精确控制出手角度，确保尖端朝前命中</li>
+<li>多手里剑术：同时投掷多枚需要不同的出手角度和力度</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./statics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./dynamics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

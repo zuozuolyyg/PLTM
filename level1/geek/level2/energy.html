@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>能量方法 - 极客制造 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../geek.html" style="color:#00d4ff;">极客制造</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../geek.html" style="color:#00d4ff;text-decoration:none;">极客制造</a>
+            <span style="margin:0 0.5rem;">/</span><span>能量方法</span>
+        </div>
+        <a href="../../geek.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第五课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">能量方法</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">电池续航与能量回收的效率优化</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约40分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">电池是移动设备的生命线。如何延长续航、提高充电效率、回收制动能量——这些都是能量管理的核心问题。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">电池的能量密度与续航</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">电池的能量密度决定了设备的续航时间。锂电池能量密度约250Wh/kg，是铅酸电池的5倍。但距离汽油的12000Wh/kg还有巨大差距。</p>
+                    <img src="../../../images/geek-statics-ch3-tensegrity-model.jpg" alt="Geek Statics Ch3 Tensegrity Model" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>极客项目的电池选择</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">不同电池的能量特性：</p>
+                        <ul><li>18650锂电池：单节3.7V/3000mAh，约11Wh，DIY项目最常用</li>
+<li>锂聚合物电池：形状灵活，无人机和可穿戴设备首选</li>
+<li>磷酸铁锂：安全性高，循环寿命长，电动车和储能系统使用</li>
+<li>续航计算：电池容量(Wh)/平均功率(W)=续航时间(h)</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">能量回收技术</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">制动能量回收将动能转化为电能储存，提高整体能量效率。电动车的再生制动可以回收约30%的制动能量。</p>
+                    <img src="../../../images/linear-motion-robot.jpg" alt="Linear Motion Robot" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>能量回收的应用</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">极客项目中的能量回收：</p>
+                        <ul><li>再生制动：电动滑板车下坡时电机反转发电，延长续航</li>
+<li>太阳能充电：便携太阳能板为设备充电，户外项目必备</li>
+<li>压电发电：利用振动产生电能，可为低功耗传感器供电</li>
+<li>热电回收：温差发电片将废热转化为电能，效率约5-8%</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./dynamics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./vibration.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

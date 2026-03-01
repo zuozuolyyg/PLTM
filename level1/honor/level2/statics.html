@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静力学基础 - 王者荣耀 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../honor.html" style="color:#00d4ff;">王者荣耀</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../honor.html" style="color:#00d4ff;text-decoration:none;">王者荣耀</a>
+            <span style="margin:0 0.5rem;">/</span><span>静力学基础</span>
+        </div>
+        <a href="../../honor.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第二课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">静力学基础</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">防御塔受力与英雄站位的力学平衡</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约45分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">在王者荣耀中，防御塔是最重要的防御工事，英雄的站位决定了团战的胜负。这些都可以用静力学的平衡原理来分析。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">防御塔的力学模型</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">防御塔可以看作一个固定的力学系统：它有固定的攻击范围（力的作用域）、固定的攻击力（力的大小）和固定的攻击目标优先级（力的方向）。</p>
+                    <img src="../../../images/game-physics.jpg" alt="Game Physics" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>塔下作战的力学分析</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">防御塔机制的力学类比：</p>
+                        <ul><li>攻击范围：防御塔攻击范围是一个圆形区域，类似力场的作用范围</li>
+<li>目标切换：塔优先攻击攻击己方英雄的敌人，类似力的优先级</li>
+<li>伤害递增：连续攻击同一目标伤害递增，类似力的累积效应</li>
+<li>越塔强杀：需要计算塔伤害与自身血量的平衡点</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">团战站位的稳定性</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">团战中的站位就像力学中的稳定平衡。前排坦克承受伤害（承受力），后排输出造成伤害（施加力），辅助提供增益（辅助力）。</p>
+                    
+                    <div class="case-study">
+                        <h4>阵型的力学稳定性</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">团战站位的力学原理：</p>
+                        <ul><li>前排抗压：坦克站在最前面承受伤害，如同结构的承重柱</li>
+<li>后排输出：射手和法师站在安全距离输出，如同远程力的作用</li>
+<li>侧翼包抄：刺客从侧面切入，打破对方阵型平衡</li>
+<li>三角站位：三人组成三角形站位最稳定，不易被一个技能全部命中</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./intro.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./kinematics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

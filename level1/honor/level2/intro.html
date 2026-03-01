@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绪论 - 王者荣耀 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../honor.html" style="color:#00d4ff;">王者荣耀</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../honor.html" style="color:#00d4ff;text-decoration:none;">王者荣耀</a>
+            <span style="margin:0 0.5rem;">/</span><span>绪论</span>
+        </div>
+        <a href="../../honor.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第一课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">绪论</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">游戏物理引擎与MOBA中的力学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约30分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">王者荣耀虽然是2D俯视角MOBA游戏，但其底层运行着复杂的物理引擎。英雄移动、技能碰撞、弹道计算——每一帧都在进行力学运算。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">游戏物理引擎基础</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">游戏物理引擎负责模拟物体的运动和碰撞。王者荣耀使用简化的2D物理模型，每秒进行30-60次物理计算，确保游戏流畅运行。</p>
+                    <img src="../../../images/honor-kings.jpg" alt="游戏物理引擎基础" class="content-image">
+                    <div class="case-study">
+                        <h4>王者荣耀中的物理系统</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">游戏中的力学元素：</p>
+                        <ul><li>碰撞检测：英雄与墙壁、小兵、野怪的碰撞使用圆形碰撞体</li>
+<li>弹道计算：鲁班七号的子弹、后羿的箭矢都有独立的弹道轨迹</li>
+<li>位移计算：闪现、冲锋等位移技能需要计算起点到终点的路径</li>
+<li>视野系统：草丛视野基于射线检测，类似光学中的遮挡原理</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">MOBA游戏的力学思维</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">理论力学的思维方式可以帮助理解游戏机制。力的平衡对应阵容平衡，运动学对应走位技巧，动力学对应伤害计算。</p>
+                    
+                    <div class="case-study">
+                        <h4>用力学思维理解游戏</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">理论力学三分支的游戏对应：</p>
+                        <ul><li>静力学→阵容平衡：坦克、法师、射手、辅助的配比如同力的平衡</li>
+<li>运动学→走位预判：预判敌人移动轨迹，提前释放技能</li>
+<li>动力学→伤害机制：攻击力×技能倍率-防御减免=实际伤害</li>
+<li>能量守恒→资源管理：蓝量、血量、经济的合理分配</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <span></span>
+            <a href="./statics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

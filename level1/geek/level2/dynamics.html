@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动力学 - 极客制造 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../geek.html" style="color:#00d4ff;">极客制造</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../geek.html" style="color:#00d4ff;text-decoration:none;">极客制造</a>
+            <span style="margin:0 0.5rem;">/</span><span>动力学</span>
+        </div>
+        <a href="../../geek.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第四课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">动力学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">电机驱动与齿轮传动的动力学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约55分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">电机是极客项目的动力源，齿轮是力的传递者。理解电机特性和齿轮传动比，才能为项目选择合适的动力系统。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">电机的动力学特性</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">电机将电能转化为机械能。直流电机的转矩与电流成正比，转速与电压成正比。选择电机需要匹配负载的转矩和转速需求。</p>
+                    <img src="../../../images/geek-statics-ch3-cnc-structure.jpg" alt="Geek Statics Ch3 Cnc Structure" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>极客项目的电机选型</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">常用电机的动力学特征：</p>
+                        <ul><li>直流有刷电机：简单便宜，适合入门项目，效率约70-80%</li>
+<li>无刷电机：效率高达90%，寿命长，无人机和电动车首选</li>
+<li>步进电机：精确控制角度，3D打印机和CNC常用</li>
+<li>舵机：内置减速器和控制器，机器人关节常用</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">齿轮传动的力学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">齿轮传动改变转速和转矩。减速比越大，输出转矩越大但转速越低。齿轮设计需要考虑强度、精度和效率。</p>
+                    <img src="../../../images/geek-statics-ch3-gimbal-design.jpg" alt="Geek Statics Ch3 Gimbal Design" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>齿轮传动设计</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">齿轮传动的力学原理：</p>
+                        <ul><li>减速比：大齿轮齿数/小齿轮齿数，如60:20=3:1减速</li>
+<li>转矩放大：减速比为3时，输出转矩是输入的3倍（忽略损耗）</li>
+<li>行星齿轮：紧凑高效，减速比可达100:1，机器人关节常用</li>
+<li>蜗轮蜗杆：自锁特性，适合需要保持位置的场合如升降机构</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./kinematics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./energy.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

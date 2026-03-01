@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动力学 - 王者荣耀 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../honor.html" style="color:#00d4ff;">王者荣耀</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../honor.html" style="color:#00d4ff;text-decoration:none;">王者荣耀</a>
+            <span style="margin:0 0.5rem;">/</span><span>动力学</span>
+        </div>
+        <a href="../../honor.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第四课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">动力学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">技能伤害与碰撞检测的动力学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约55分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">每一次技能命中都是一次力学碰撞。伤害计算、击退效果、碰撞检测——这些游戏核心机制都可以用动力学来理解。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">伤害计算的力学模型</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">王者荣耀的伤害公式类似于动力学中的力与运动关系。攻击力是施加的力，防御力是阻力，最终伤害是净力产生的效果。</p>
+                    
+                    <div class="case-study">
+                        <h4>伤害公式的力学类比</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">游戏伤害机制的动力学分析：</p>
+                        <ul><li>物理伤害：攻击力×技能倍率×(1-护甲减免)，类似F=ma中考虑阻力</li>
+<li>法术伤害：法术强度×技能倍率×(1-魔抗减免)，另一种力的作用</li>
+<li>真实伤害：无视防御直接造成伤害，类似无阻力的理想情况</li>
+<li>暴击机制：暴击率×暴击倍率，类似力的随机放大效应</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">击退与控制效果</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">击退、击飞、拉拽等控制效果改变英雄的运动状态。这些效果的距离和持续时间都经过精确的动力学计算。</p>
+                    
+                    <div class="case-study">
+                        <h4>控制技能的动力学</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">各类控制效果的力学分析：</p>
+                        <ul><li>击退（廉颇大招）：施加瞬间冲量，目标获得初速度后减速停止</li>
+<li>击飞（项羽大招）：施加向上的力，目标做类抛体运动</li>
+<li>拉拽（钟馗钩子）：施加持续的拉力，目标沿钩子方向加速运动</li>
+<li>减速（冰霜法杖）：增大运动阻力，降低目标移动速度</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./kinematics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./energy.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

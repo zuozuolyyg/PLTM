@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>振动基础 - 极客制造 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../geek.html" style="color:#00d4ff;">极客制造</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../geek.html" style="color:#00d4ff;text-decoration:none;">极客制造</a>
+            <span style="margin:0 0.5rem;">/</span><span>振动基础</span>
+        </div>
+        <a href="../../geek.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第六课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">振动基础</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">电机振动控制与结构共振避免</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约35分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">电机运转产生振动，结构共振可能导致破坏。极客项目中的振动问题往往是最后才发现但最难解决的。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">电机振动的控制</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">电机振动来源于转子不平衡、轴承磨损和电磁力波动。减小振动需要精确的动平衡和合理的安装方式。</p>
+                    <img src="../../../images/multi-axis-robot-arm.jpg" alt="Multi Axis Robot Arm" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>DIY项目的减振方案</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">常见的振动控制方法：</p>
+                        <ul><li>动平衡：在转子上添加配重消除不平衡，减小振动90%以上</li>
+<li>软垫安装：橡胶垫圈隔离电机振动向机架传递</li>
+<li>刚性安装：确保安装座刚度远大于电机振动力，避免共振</li>
+<li>减振器：在关键位置安装阻尼材料，吸收振动能量</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">结构共振的识别与避免</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">当激励频率等于结构固有频率时发生共振，振幅急剧增大。3D打印机的振纹、无人机的抖动往往都是共振导致的。</p>
+                    <img src="../../../images/drone-swarm.jpg" alt="Drone Swarm" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>共振问题的诊断与解决</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">极客项目中的共振案例：</p>
+                        <ul><li>3D打印振纹：打印速度对应的频率与框架固有频率接近时产生</li>
+<li>无人机抖动：螺旋桨频率与机臂固有频率接近时产生共振</li>
+<li>解决方案1：改变激励频率（调整电机转速或打印速度）</li>
+<li>解决方案2：改变固有频率（加强结构刚度或增加质量）</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./energy.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="../../geek.html" class="btn-primary">完成学习 <i data-lucide="check" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

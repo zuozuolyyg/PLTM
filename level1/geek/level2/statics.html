@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静力学基础 - 极客制造 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../geek.html" style="color:#00d4ff;">极客制造</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../geek.html" style="color:#00d4ff;text-decoration:none;">极客制造</a>
+            <span style="margin:0 0.5rem;">/</span><span>静力学基础</span>
+        </div>
+        <a href="../../geek.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第二课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">静力学基础</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">机械结构设计与3D打印的力学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约45分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">3D打印让每个人都能制造复杂零件，但打印件的强度和精度需要力学知识来保证。层间结合力、填充密度、打印方向都影响最终强度。</p>
+                    <img src="../../../images/geek-statics-ch1-tumbler-applications.jpg" alt="Geek Statics Ch1 Tumbler Applications" class="content-image">
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">3D打印件的受力分析</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">3D打印件是逐层堆积的，层间结合力通常弱于层内强度。打印方向的选择直接影响零件在受力方向上的强度。</p>
+                    <img src="../../../images/geek-statics-ch1-balance-analysis.jpg" alt="Geek Statics Ch1 Balance Analysis" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>3D打印的力学优化</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">打印参数对强度的影响：</p>
+                        <ul><li>打印方向：受拉方向应与打印层平行，层间结合力弱不宜受拉</li>
+<li>填充密度：100%填充最强但费时费料，20-40%填充适合大多数应用</li>
+<li>壁厚：外壁厚度对弯曲强度影响最大，建议至少3层</li>
+<li>材料选择：PLA硬但脆，PETG韧性好，尼龙耐磨，碳纤维最强</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">机械结构的设计原则</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">好的机械结构应该用最少的材料承受最大的载荷。三角形是最稳定的结构，工字梁是最高效的截面，桁架是最轻的承重结构。</p>
+                    <img src="../../../images/geek-statics-ch1-speaker-design.jpg" alt="Geek Statics Ch1 Speaker Design" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>极客项目的结构设计</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">常用的结构设计技巧：</p>
+                        <ul><li>三角加强：在直角连接处添加三角形加强筋，提高刚度</li>
+<li>减重孔：在非关键区域开孔减轻重量，保持强度</li>
+<li>圆角设计：尖角处应力集中，改为圆角可提高强度50%以上</li>
+<li>仿生结构：模仿骨骼的中空结构，轻量化同时保持强度</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./intro.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./kinematics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>
