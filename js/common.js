@@ -2,16 +2,16 @@
 
 // 兴趣领域数据
 const interestsData = [
-    { id: "money", name: "赚钱理财", description: "用经济学视角理解力学原理，探索投资中的风险平衡与杠杆效应", icon: "TrendingUp", emoji: "💰", color: "#22c55e", gradient: "from-green-500 to-emerald-600", image: "./images/money-finance.jpg" },
-    { id: "music", name: "音乐艺术", description: "探索声音与振动的力学奥秘，从乐器到音响的物理原理", icon: "Music", emoji: "🎵", color: "#a855f7", gradient: "from-purple-500 to-violet-600", image: "./images/music-guitar.jpg" },
-    { id: "sports", name: "体育运动", description: "解析运动中的力与运动规律，从跳高到游泳的力学分析", icon: "Trophy", emoji: "⚽", color: "#f97316", gradient: "from-orange-500 to-red-600", image: "./images/sports-athletics.jpg" },
-    { id: "movie", name: "电影电视剧", description: "揭秘大片中的物理特效，从爆炸场景到科幻设定的力学原理", icon: "Film", emoji: "🎬", color: "#ef4444", gradient: "from-red-500 to-rose-600", image: "./images/movie-cinema.jpg" },
     { id: "honor", name: "王者荣耀", description: "游戏技能背后的力学原理，英雄移动、技能弹道与物理引擎", icon: "Gamepad2", emoji: "🎮", color: "#f59e0b", gradient: "from-amber-500 to-yellow-600", image: "./images/honor-kings.jpg" },
     { id: "valorant", name: "无畏契约", description: "射击游戏中的弹道力学，后坐力、抛物线与精准计算", icon: "Target", emoji: "🔫", color: "#06b6d4", gradient: "from-cyan-500 to-blue-600", image: "./images/valorant-game.jpg" },
-    { id: "tech", name: "科技前沿", description: "航天与工程中的力学应用，火箭发射到自动驾驶", icon: "Rocket", emoji: "🚀", color: "#3b82f6", gradient: "from-blue-500 to-indigo-600", image: "./images/tech-rocket.jpg" },
-    { id: "geek", name: "极客制造", description: "手工耿、稚晖君、何同学的创意发明中的力学智慧", icon: "Cpu", emoji: "🔧", color: "#6366f1", gradient: "from-indigo-500 to-purple-600", image: "./images/geek-robot.jpg" },
+    { id: "anime", name: "二次元世界", description: "柯南、石纪元、三体、少女与战车中的物理知识", icon: "Sparkles", emoji: "✨", color: "#ec4899", gradient: "from-pink-500 to-rose-600", image: "./images/anime-conan.jpg" },
+    { id: "movie", name: "电影电视剧", description: "揭秘大片中的物理特效，从爆炸场景到科幻设定的力学原理", icon: "Film", emoji: "🎬", color: "#ef4444", gradient: "from-red-500 to-rose-600", image: "./images/movie-cinema.jpg" },
+    { id: "sports", name: "体育运动", description: "解析运动中的力与运动规律，从跳高到游泳的力学分析", icon: "Trophy", emoji: "⚽", color: "#f97316", gradient: "from-orange-500 to-red-600", image: "./images/sports-athletics.jpg" },
     { id: "racing", name: "速度与激情", description: "赛车、超跑与无人驾驶中的速度、加速度与空气动力学", icon: "Car", emoji: "🏎️", color: "#dc2626", gradient: "from-red-600 to-orange-600", image: "./images/racing-speed.jpg" },
-    { id: "anime", name: "二次元世界", description: "柯南、石纪元、进击的巨人、少女与战车中的物理知识", icon: "Sparkles", emoji: "✨", color: "#ec4899", gradient: "from-pink-500 to-rose-600", image: "./images/anime-conan.jpg" }
+    { id: "music", name: "音乐艺术", description: "探索声音与振动的力学奥秘，从乐器到音响的物理原理", icon: "Music", emoji: "🎵", color: "#a855f7", gradient: "from-purple-500 to-violet-600", image: "./images/music-guitar.jpg" },
+    { id: "money", name: "赚钱理财", description: "用经济学视角理解力学原理，探索投资中的风险平衡与杠杆效应", icon: "TrendingUp", emoji: "💰", color: "#22c55e", gradient: "from-green-500 to-emerald-600", image: "./images/money-finance.jpg" },
+    { id: "tech", name: "科技前沿", description: "航天与工程中的力学应用，火箭发射到自动驾驶", icon: "Rocket", emoji: "🚀", color: "#3b82f6", gradient: "from-blue-500 to-indigo-600", image: "./images/tech-rocket.jpg" },
+    { id: "geek", name: "极客制造", description: "手工耿、稚晖君、何同学的创意发明中的力学智慧", icon: "Cpu", emoji: "🔧", color: "#6366f1", gradient: "from-indigo-500 to-purple-600", image: "./images/geek-robot.jpg" }
 ];
 
 // 课程数据

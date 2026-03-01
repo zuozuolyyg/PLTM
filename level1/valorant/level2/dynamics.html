@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动力学 - 无畏契约 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../valorant.html" style="color:#00d4ff;">无畏契约</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../valorant.html" style="color:#00d4ff;text-decoration:none;">无畏契约</a>
+            <span style="margin:0 0.5rem;">/</span><span>动力学</span>
+        </div>
+        <a href="../../valorant.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第四课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">动力学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">后坐力控制与爆炸伤害的动力学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约55分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">后坐力是射击时枪械给手的反作用力。控制后坐力就是控制力的方向。而爆炸伤害则涉及冲击波的动力学传播。</p>
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">后坐力的动力学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">射击时火药燃气推动子弹前进（作用力），同时给枪械一个反向推力（反作用力）。这就是牛顿第三定律。后坐力导致准星上移，需要玩家反向补偿。</p>
+                    
+                    <div class="case-study">
+                        <h4>后坐力控制技巧</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">后坐力的动力学分析：</p>
+                        <ul><li>牛顿第三定律：子弹向前的动量=枪械后坐的动量</li>
+<li>压枪补偿：鼠标向下拉动，抵消后坐力导致的准星上移</li>
+<li>扫射模式：每把枪有固定的后坐力模式，可以通过练习记忆</li>
+<li>点射策略：每次射击2-3发后暂停，让后坐力恢复</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">爆炸与范围伤害</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">火箭筒、手雷等爆炸物的伤害随距离衰减。爆炸中心伤害最高，边缘伤害最低，符合能量随距离扩散的物理规律。</p>
+                    
+                    <div class="case-study">
+                        <h4>爆炸伤害的距离衰减</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">范围伤害的动力学模型：</p>
+                        <ul><li>中心伤害：爆炸中心造成最大伤害，可能直接击杀</li>
+<li>距离衰减：伤害随距离平方衰减，边缘只造成少量伤害</li>
+<li>墙壁遮挡：实体墙壁可以完全阻挡爆炸伤害</li>
+<li>自伤机制：自己的爆炸物也会伤害自己，需要保持安全距离</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./kinematics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./energy.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

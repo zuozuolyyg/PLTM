@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>振动基础 - 科技前沿 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../tech.html" style="color:#00d4ff;">科技前沿</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../tech.html" style="color:#00d4ff;text-decoration:none;">科技前沿</a>
+            <span style="margin:0 0.5rem;">/</span><span>振动基础</span>
+        </div>
+        <a href="../../tech.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第六课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">振动基础</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">精密仪器防振与MEMS传感器</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约35分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">光刻机需要纳米级稳定性，地震仪需要检测微弱振动，手机陀螺仪需要感知细微旋转——这些都是振动学的精密应用。</p>
+                    <img src="../../../images/tech-statics-ch3-taipei-damper.jpg" alt="Tech Statics Ch3 Taipei Damper" class="content-image">
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">精密仪器的振动控制</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">高精度设备对振动极其敏感。ASML光刻机的工件台需要在0.1纳米精度下工作，任何微小振动都会导致芯片缺陷。</p>
+                    <img src="../../../images/tech-statics-ch1-robot-balance.jpg" alt="Tech Statics Ch1 Robot Balance" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>极致防振技术</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">精密设备的振动控制：</p>
+                        <ul><li>主动隔振：传感器检测振动，执行器产生反向力抵消，衰减99%以上</li>
+<li>被动隔振：弹簧-阻尼系统隔离地面振动，如气浮平台</li>
+<li>LIGO引力波探测器：隔振系统将地面振动衰减10¹²倍</li>
+<li>芯片工厂：建在特殊地基上，远离交通和工业振动源</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">MEMS振动传感器</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">微机电系统（MEMS）利用微小结构的振动来测量加速度、角速度等物理量。手机中的加速度计和陀螺仪就是MEMS器件。</p>
+                    <img src="../../../images/tech-statics-ch2-bridge-analysis.jpg" alt="Tech Statics Ch2 Bridge Analysis" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>MEMS传感器的振动原理</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">微型振动传感器的应用：</p>
+                        <ul><li>加速度计：微小质量块在加速时产生位移，电容变化反映加速度</li>
+<li>陀螺仪：利用科里奥利力检测旋转角速度，精度达0.01°/s</li>
+<li>地震预警：MEMS加速度计组成的网络可提前数秒预警地震</li>
+<li>惯性导航：不依赖GPS，通过积分加速度和角速度计算位置</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./energy.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="../../tech.html" class="btn-primary">完成学习 <i data-lucide="check" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>

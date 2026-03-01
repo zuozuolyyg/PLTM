@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学 - 科技前沿 - 理论力学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <nav class="navbar"><div class="navbar-content">
+        <a href="../../../index.html" class="navbar-brand"><span class="gradient-text">理论力学</span></a>
+        <ul class="navbar-nav">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../tech.html" style="color:#00d4ff;">科技前沿</a></li>
+        </ul>
+    </div></nav>
+    <div class="page-content"><div class="container">
+        <div style="padding:1rem 0;color:rgba(255,255,255,0.5);">
+            <a href="../../../index.html" style="color:#00d4ff;text-decoration:none;">首页</a>
+            <span style="margin:0 0.5rem;">/</span>
+            <a href="../../tech.html" style="color:#00d4ff;text-decoration:none;">科技前沿</a>
+            <span style="margin:0 0.5rem;">/</span><span>运动学</span>
+        </div>
+        <a href="../../tech.html" class="btn-secondary" style="margin-bottom:2rem;display:inline-flex;">
+            <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 返回课程列表
+        </a>
+        <div style="text-align:center;margin-bottom:3rem;">
+            <span style="display:inline-block;background:rgba(0,212,255,0.2);color:#00d4ff;padding:0.5rem 1rem;border-radius:20px;font-size:0.875rem;margin-bottom:1rem;">第三课</span>
+            <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:1rem;">运动学</h1>
+            <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;">卫星轨道与自动驾驶的运动学</p>
+            <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:0.5rem;">⏱️ 约50分钟</p>
+        </div>
+        <div class="section"><div class="section-content">
+            <p style="font-size:1.1rem;line-height:1.8;color:rgba(255,255,255,0.9);">GPS卫星在20200km高空精确运行，自动驾驶汽车在复杂路况中安全行驶——这些都需要精确的运动学计算。</p>
+                    <img src="../../../images/tech-statics-ch3-golden-gate-wind.jpg" alt="Tech Statics Ch3 Golden Gate Wind" class="content-image">
+        </div></div>
+        
+            <div class="section">
+                <h2 class="section-title">卫星轨道运动学</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">卫星绕地球运行遵循开普勒定律。轨道高度决定周期，低轨卫星约90分钟绕地球一圈，地球同步轨道卫星周期恰好24小时。</p>
+                    <img src="../../../images/satellite-orbit.jpg" alt="Satellite Orbit" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>卫星轨道的运动学参数</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">不同轨道的运动学特征：</p>
+                        <ul><li>低地球轨道（LEO）：高度200-2000km，速度约7.8km/s，SpaceX星链在此</li>
+<li>中地球轨道（MEO）：高度2000-36000km，GPS卫星在20200km</li>
+<li>地球同步轨道（GEO）：高度35786km，通信卫星固定在赤道上空</li>
+<li>月球轨道：距地球38万km，阿波罗飞船往返约8天</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">自动驾驶的运动规划</h2>
+                <div class="section-content">
+                    <p style="line-height:1.8;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">自动驾驶需要实时计算车辆的位置、速度和加速度，规划安全的行驶轨迹。这本质上是一个复杂的运动学问题。</p>
+                    <img src="../../../images/curved-trajectory-automation.jpg" alt="Curved Trajectory Automation" class="content-image">
+                    
+                    <div class="case-study">
+                        <h4>自动驾驶的运动学</h4>
+                        <p style="margin-bottom:1rem;color:rgba(255,255,255,0.8);">自动驾驶中的运动学应用：</p>
+                        <ul><li>轨迹规划：计算从A到B的最优路径，考虑曲率、速度限制</li>
+<li>运动预测：预测周围车辆和行人的未来位置，提前避让</li>
+<li>制动距离：120km/h紧急制动距离约80米，系统需要提前判断</li>
+<li>转弯半径：根据速度和路面摩擦力计算安全转弯速度</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        <div style="display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,212,255,0.2);">
+            <a href="./statics.html" class="btn-secondary"><i data-lucide="arrow-left" style="width:16px;height:16px;"></i> 上一课</a>
+            <a href="./dynamics.html" class="btn-primary">下一课 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+        </div>
+    </div></div>
+    <footer class="footer"><p>理论力学 · 个性化学习平台</p></footer>
+    <script src="../../../js/common.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons();});</script>
+</body>
+</html>
