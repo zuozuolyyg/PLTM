@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理论力学 - 个性化学习平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;"></div>
+
+    <!-- 主要内容 -->
+    <div style="position: relative; z-index: 1;">
+        <!-- Hero Section -->
+        <section style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; text-align: center;">
+            <div style="max-width: 800px;">
+                <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+                    用<span class="gradient-text">兴趣</span>解锁<br>理论力学
+                </h1>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.7); margin-bottom: 3rem; line-height: 1.8;">
+                    从游戏到理财，从音乐到科技<br>
+                    选择你感兴趣的领域，开启个性化学习之旅
+                </p>
+                <a href="#interests" class="btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    选择兴趣领域
+                    <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 兴趣选择区域 -->
+        <section id="interests" style="padding: 4rem 2rem;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+                    选择你的<span class="gradient-text">兴趣</span>
+                </h2>
+                <p style="text-align: center; color: rgba(255,255,255,0.6); margin-bottom: 3rem;">
+                    10个领域 · 6门课程 · 用兴趣驱动学习
+                </p>
+
+                <div id="interests-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <!-- 兴趣卡片将通过JavaScript生成 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>理论力学 · 个性化学习平台</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">用兴趣点燃学习热情</p>
+        </footer>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script>
+        // 生成粒子
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        // 生成兴趣卡片
+        function generateInterestCards() {
+            const grid = document.getElementById('interests-grid');
+            
+            interestsData.forEach(interest => {
+                const card = document.createElement('a');
+                card.href = `./level1/${interest.id}.html`;
+                card.className = 'card-hover';
+                card.style.cssText = `
+                    display: block;
+                    background: rgba(30, 58, 95, 0.3);
+                    border: 1px solid rgba(0, 212, 255, 0.2);
+                    border-radius: 16px;
+                    padding: 1.5rem;
+                    text-decoration: none;
+                    color: white;
+                `;
+                
+                card.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="font-size: 2.5rem;">${interest.emoji}</span>
+                        <div>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.25rem;">${interest.name}</h3>
+                            <span style="font-size: 0.8rem; color: ${interest.color};">● 6门课程</span>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.6;">
+                        ${interest.description}
+                    </p>
+                    <div style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; color: #00d4ff; font-size: 0.9rem;">
+                        <span>开始学习</span>
+                        <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            generateInterestCards();
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
